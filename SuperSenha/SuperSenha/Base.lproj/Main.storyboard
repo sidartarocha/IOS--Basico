@@ -71,18 +71,30 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ckX-fh-Pe2">
                                 <rect key="frame" x="341" y="251.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="F6e-Ac-H8d"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BxP-9l-Qoo">
                                 <rect key="frame" x="341" y="297.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="aCN-BW-l8o"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oO8-Js-D0e">
                                 <rect key="frame" x="341" y="343.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="CB8-VY-HqI"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiB-iB-ZOq">
                                 <rect key="frame" x="341" y="389.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="1iB-eq-Ae0"/>
+                                </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUi-GX-TBL">
                                 <rect key="frame" x="24" y="440" width="366" height="44"/>
@@ -95,7 +107,6 @@
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="gerarSenhas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="heF-ch-CCQ"/>
                                     <segue destination="ZGM-LX-nRc" kind="show" id="oJZ-9D-JpU"/>
                                 </connections>
                             </button>
@@ -147,6 +158,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="WLH-cf-VsP"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnGerarSenha" destination="gUi-GX-TBL" id="dCP-K7-C6o"/>
                         <outlet property="swCaptitalLetters" destination="oO8-Js-D0e" id="IMj-6j-fYE"/>
                         <outlet property="swLetters" destination="ckX-fh-Pe2" id="vJe-vs-nRZ"/>
                         <outlet property="swNumbers" destination="BxP-9l-Qoo" id="v0T-TM-BD0"/>

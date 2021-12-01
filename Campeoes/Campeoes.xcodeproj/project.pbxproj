@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57BE26CE2755C91800C017DC /* PaisesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BE26CD2755C91800C017DC /* PaisesTableViewCell.swift */; };
+		57BE26D22755D26600C017DC /* PaisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BE26D12755D26600C017DC /* PaisesTableViewController.swift */; };
+		57BE26D52755D49300C017DC /* PaisesCampeos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BE26D42755D49300C017DC /* PaisesCampeos.swift */; };
+		57BE26D72756F10F00C017DC /* PaisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BE26D62756F10F00C017DC /* PaisesViewController.swift */; };
 		ED473AEC27491A8B008E4D67 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED473AEB27491A8B008E4D67 /* GamesTableViewCell.swift */; };
 		EDDDDE3A2736CDEA001FCE5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDDE392736CDEA001FCE5E /* AppDelegate.swift */; };
 		EDDDDE3C2736CDEA001FCE5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDDE3B2736CDEA001FCE5E /* SceneDelegate.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57BE26CD2755C91800C017DC /* PaisesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaisesTableViewCell.swift; sourceTree = "<group>"; };
+		57BE26D12755D26600C017DC /* PaisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaisesTableViewController.swift; sourceTree = "<group>"; };
+		57BE26D42755D49300C017DC /* PaisesCampeos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaisesCampeos.swift; sourceTree = "<group>"; };
+		57BE26D62756F10F00C017DC /* PaisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaisesViewController.swift; sourceTree = "<group>"; };
 		ED473AEB27491A8B008E4D67 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
 		EDDDDE362736CDE9001FCE5E /* Campeoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Campeoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDDDE392736CDEA001FCE5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57BE26D32755D2D100C017DC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EDFEB3F82737168D00CC4BAD /* WorldCupTableViewCell.swift */,
+				57BE26CD2755C91800C017DC /* PaisesTableViewCell.swift */,
+				ED473AEB27491A8B008E4D67 /* GamesTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		EDDDDE2D2736CDE9001FCE5E = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +120,11 @@
 		EDDDDE512736F254001FCE5E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				57BE26D32755D2D100C017DC /* Cell */,
 				EDDDDE532736F345001FCE5E /* WinnersTableViewController.swift */,
 				EDDDDE552736F3F0001FCE5E /* WorldCupViewController.swift */,
-				EDFEB3F82737168D00CC4BAD /* WorldCupTableViewCell.swift */,
-				ED473AEB27491A8B008E4D67 /* GamesTableViewCell.swift */,
+				57BE26D12755D26600C017DC /* PaisesTableViewController.swift */,
+				57BE26D62756F10F00C017DC /* PaisesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,6 +135,7 @@
 				EDDDDE572736F569001FCE5E /* WorldCup.swift */,
 				EDDDDE592736F78E001FCE5E /* Match.swift */,
 				EDDDDE5B2736F7B1001FCE5E /* Game.swift */,
+				57BE26D42755D49300C017DC /* PaisesCampeos.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,14 +212,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BE26CE2755C91800C017DC /* PaisesTableViewCell.swift in Sources */,
 				EDDDDE542736F345001FCE5E /* WinnersTableViewController.swift in Sources */,
 				ED473AEC27491A8B008E4D67 /* GamesTableViewCell.swift in Sources */,
+				57BE26D72756F10F00C017DC /* PaisesViewController.swift in Sources */,
+				57BE26D52755D49300C017DC /* PaisesCampeos.swift in Sources */,
 				EDFEB3F92737168D00CC4BAD /* WorldCupTableViewCell.swift in Sources */,
 				EDDDDE3A2736CDEA001FCE5E /* AppDelegate.swift in Sources */,
 				EDDDDE5C2736F7B1001FCE5E /* Game.swift in Sources */,
 				EDDDDE582736F569001FCE5E /* WorldCup.swift in Sources */,
 				EDDDDE562736F3F0001FCE5E /* WorldCupViewController.swift in Sources */,
 				EDDDDE3C2736CDEA001FCE5E /* SceneDelegate.swift in Sources */,
+				57BE26D22755D26600C017DC /* PaisesTableViewController.swift in Sources */,
 				EDDDDE5A2736F78E001FCE5E /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
